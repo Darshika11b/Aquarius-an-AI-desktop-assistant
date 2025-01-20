@@ -7,13 +7,21 @@ from time import sleep
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty("voices")
 engine.setProperty("voice", voices[1].id)
-engine.setProperty("rate",200)
+engine.setProperty("rate", 200)
 
 def speak(audio):
     engine.say(audio)
-        engine.runAndWait()
+    engine.runAndWait()  # Fixed indentation
 
-dictapp = {"commandprompt":"cmd","paint":"paint","word":"winword","excel":"excel","chrome":"chrome","vscode":"code","powerpoint":"powerpoint"}
+dictapp = {
+    "commandprompt": "cmd",
+    "paint": "paint",
+    "word": "winword",
+    "excel": "excel",
+    "chrome": "chrome",
+    "vscode": "code",
+    "powerpoint": "powerpoint"
+}
 
 def openappweb(query):
     speak("Launching, sir")
