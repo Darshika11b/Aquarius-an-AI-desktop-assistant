@@ -235,27 +235,27 @@ def alarm(query):
     timehere.close()
     os.startfile("alarm.py")
     
-elif "pause" in query:
+  elif "pause" in query:
     pyautogui.press("k")
     speak("video pause")
-elif "play" in query:
+  elif "play" in query:
     pyautogui.press("k")
     speak("video played")
-elif "mute" in query:
+  elif "mute" in query:
     pyautogui.press("m")
     speak("video muted")
 
-elif "volume up" in query:
+  elif "volume up" in query:
     from keyboard import volumeup
     speak("Turning volume up,sir")
     volumeup()
-elif "volume down" in query:
+  elif "volume down" in query:
     from keyboard import volumedown
     speak("Turning volume down, sir")
     volumedown()
     
     elif "tired" in query:
-    speak("Playing your favorite songs, sir")
+     speak("Playing your favorite songs, sir")
     a = (1,2,3) # You can choose any number of songs (I have only chosen 3)
     b = random.choice(a)
     if b==1:
