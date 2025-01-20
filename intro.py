@@ -12,7 +12,7 @@ def play_gif():
     root.lift()
     root.attributes("-topmost",True)
     global img
-    img = Image.open("C:\Users\darsh\Downloads\download (1).jpg")
+    img = Image.open("C:\\Users\\darsh\\Downloads\\download
     lbl = Label(root)
     lbl.place(x=0,y=0)
     i=0
