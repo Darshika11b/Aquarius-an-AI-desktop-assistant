@@ -1,6 +1,6 @@
 import customtkinter as ctk
 import cv2
-import {% load mediapipe_tags %} as mp
+import mediapipe as mp
 import psutil
 import os
 import threading
